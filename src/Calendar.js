@@ -3,11 +3,12 @@ import BigCalendar from 'react-big-calendar';
 import moment from 'moment';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import eventsList from './eventsList';
+import './Calendar.css';
 
 BigCalendar.momentLocalizer(moment);
 
 const Calendar = props => (
-  <div>
+  <div className='calendar-wrap'>
     <BigCalendar
       events={eventsList}
       startAccessor='startDate'
@@ -15,8 +16,8 @@ const Calendar = props => (
       titleAccessor='title'
       min={moment({hour: 8}).toDate()}
       max={moment({hour: 20}).toDate()}
-      view='week'
-      toolbar={false}
+      defaultView='week'
+      // toolbar={false}
     />
   </div>
 );
