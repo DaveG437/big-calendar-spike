@@ -16,6 +16,7 @@ const Calendar = props => (
       min={moment({hour: 8}).toDate()}
       max={moment({hour: 20}).toDate()}
       view='week'
+      toolbar={false}
     />
   </div>
 );

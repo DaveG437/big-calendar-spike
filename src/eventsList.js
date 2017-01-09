@@ -8,9 +8,9 @@ let eventsList = [
   },
   {
     title: 'all day event',
-    allDay: false,
+    allDay: true,
     startDate: moment('09:00-10-01-2017', "HH:mm-DD-MM-YYYY").toDate(),
-    endDate: moment("00:01-12-01-2017", "HH:mm-DD-MM-YYYY").toDate()
+    endDate: moment("11:01-10-01-2017", "HH:mm-DD-MM-YYYY").toDate()
   }
 ];
 
